@@ -12,7 +12,13 @@
     "appcenter-crashes": "^1.1.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
-    "react-native-code-push": "^5.2.1"
+    "react-native-code-push": "^5.2.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "redux-actions": "^0.10.1",
+    "redux-immutablejs": "0.0.8",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-jest": "22.0.4",
