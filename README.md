@@ -1,2 +1,0 @@
-# MaxDoG
-MaxDoG-GoTo

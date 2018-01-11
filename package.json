@@ -1,5 +1,5 @@
 {
-  "name": "dog",
+  "name": "MaxDog",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,23 +7,18 @@
     "test": "jest"
   },
   "dependencies": {
-    "@types/react": "^16.0.29",
-    "@types/react-native": "^0.51.2",
-    "@types/react-redux": "^5.0.14",
-    "react": "16.0.0",
-    "react-native": "0.51",
-    "react-redux": "^5.0.5",
-    "redux": "^3.7.1",
-    "redux-actions": "^0.10.1",
-    "redux-immutablejs": "0.0.8",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.2.0"
+    "appcenter": "^1.1.0",
+    "appcenter-analytics": "^1.1.0",
+    "appcenter-crashes": "^1.1.0",
+    "react": "16.2.0",
+    "react-native": "0.52.0",
+    "react-native-code-push": "^5.2.1"
   },
   "devDependencies": {
-    "babel-jest": "21.2.0",
+    "babel-jest": "22.0.4",
     "babel-preset-react-native": "4.0.0",
-    "jest": "21.2.1",
-    "react-test-renderer": "16.0.0"
+    "jest": "22.0.5",
+    "react-test-renderer": "16.2.0"
   },
   "jest": {
     "preset": "react-native"

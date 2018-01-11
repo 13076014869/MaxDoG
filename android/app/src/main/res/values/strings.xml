@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">dog</string>
+    <string moduleConfig="true" name="appcenterCrashes_whenToSendCrashes">ALWAYS_SEND</string>
+    <string moduleConfig="true" name="appcenterAnalytics_whenToEnableAnalytics">ALWAYS_SEND</string>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">UkYG0AtUSNHiwy9np-BM6APslQi23f4257f6-02c1-42ed-bc32-7147497c4640</string>
+    <string name="app_name">MaxDog</string>
 </resources>
