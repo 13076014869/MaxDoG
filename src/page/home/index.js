@@ -56,7 +56,11 @@ class HomeComponent extends React.Component {
                         //         name: '1'
                         //     }
                         // );
-                        NativeModules.MapSc.OpenActivity("com.maxdog.MapActivity");
+                        NativeModules.MapSc.OpenActivity("com.maxdog.MapActivity", result => {
+                            console.log(result);
+                        }, err => {
+                            console.log(err);
+                        });
                     }}
                 >
                     <Text>{htmlStr}</Text>
