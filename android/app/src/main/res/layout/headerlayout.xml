@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/mapreturnbtn"
+        android:layout_marginTop="9dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/i_fanhui"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="地图"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="18sp"
+        android:background="#f0f0f0"
+        android:id="@+id/mapheadertxt"
+        />
+
+
+</RelativeLayout>

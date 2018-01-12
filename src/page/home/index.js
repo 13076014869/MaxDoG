@@ -3,7 +3,8 @@ import {
     View,
     TouchableHighlight,
     StyleSheet,
-    Text
+    Text,
+    NativeModules
 } from 'react-native';
 import { connect } from 'react-redux';
 import { action } from '../../redux/action/index.js';
@@ -48,13 +49,14 @@ class HomeComponent extends React.Component {
                 </HomeHeader>
                 <TouchableHighlight
                     onPress={(e) => {
-                        this.props.navigator.push(
-                            TestPage,
-                            {
-                                key: '1',
-                                name: '1'
-                            }
-                        );
+                        // this.props.navigator.push(
+                        //     TestPage,
+                        //     {
+                        //         key: '1',
+                        //         name: '1'
+                        //     }
+                        // );
+                        NativeModules.MapSc.OpenActivity("com.maxdog.MapActivity");
                     }}
                 >
                     <Text>{htmlStr}</Text>

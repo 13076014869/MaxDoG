@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maxdog.MapActivity">
+
+    <include layout="@layout/headerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="283dp"
+        android:id="@+id/include" />
+
+    <!--缩小按钮-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/mapsuoxiaobtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/mapsuoxiao"/>
+
+    <!--放大按钮-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/mapfangdabtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/mapfangda"/>
+
+    <!--测量面积-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/mapareabtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/maparea"/>
+    <!--测量长度-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/maplengthbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/maplength"/>
+    <!--清除按钮-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/mapclearbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/mapclear"/>
+    <!--标注位置-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/mapbiaoxuanbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/biaoxuan"/>
+    <!--定位人员-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/peoplelocalbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="170dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/inspector"/>
+
+    <!--定位隐患-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:background="#ffffff"
+        android:id="@+id/dangerlocalbtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="210dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/peoplelocal"/>
+
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/mapguanxianbtn"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="170dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:src="@drawable/guanxian"/>-->
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="28dp"
+        android:id="@+id/mapswitchlayer"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="250dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/switchlayer"/>
+</RelativeLayout>
