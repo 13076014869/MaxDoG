@@ -18,7 +18,7 @@ export default class Hello extends React.Component {
       newState === "active" && codePush.sync({
         updateDialog: {
           appendReleaseDescription: true, // 显示更新内容
-          descriptionPrefix: '\n\n更新内容：\n',
+          descriptionPrefix: '更新内容：\n',
           title: '版本更新',
           mandatoryUpdateMessage: '',
           mandatoryContinueButtonLabel: '立即更新',

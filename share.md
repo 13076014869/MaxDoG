@@ -113,6 +113,16 @@
 
 ```shell
 cordova plugin add cordova-plugin-code-push@latest
+
+注意：1.1.1版本中
+由于 cordova-plugin-code-push的config.xml中
+<hook type="before_plugin_install" src="scripts/beforeInstall.js" /> 
+scripts/beforeInstall.js 路径配置有误, 应该是
+<hook type="before_plugin_install" src="hooks/beforeInstall.js" /> 
+导致一些包没下载到,需要手动下载一些包：
+cordova plugin add cordova-plugin-file@3.0.0
+cordova plugin add cordova-plugin-file-transfer@1.4.0
+cordova plugin add cordova-plugin-zip
 ```
 
 With the CodePush plugin installed, configure your app to use it via the following steps:
@@ -148,4 +158,25 @@ With the CodePush plugin installed, configure your app to use it via the followi
     code-push release danger-android(项目名) ./platforms/android/assets/www(位置) 1.0.0(对应版本) --description "测试"
     ```
 
+    ```javascript
+    codePush.checkForUpdate(function (update) {
+        if (!update) {
+            console.log("The app is up to date.");
+        } else {
+            codePush.sync(null, {
+                updateDialog: {
+                    appendReleaseDescription: true, // 显示更新内容
+                    descriptionPrefix: '更新内容：\n',
+                    updateTitle: '版本更新',
+                    optionalUpdateMessage : '有更新内容，请立刻执行更新！',
+                    mandatoryUpdateMessage: "有更新内容，请立刻执行更新！",
+                    optionalIgnoreButtonLabel: "忽略",
+                    optionalInstallButtonLabel: "立即更新", // 可选更新时候的 按钮
+                    mandatoryContinueButtonLabel: '立即更新',   // 强制更新时候的 按钮
+                },
+                installMode: InstallMode.IMMEDIATE
+            });
+        }
+    });
+    ```
 
