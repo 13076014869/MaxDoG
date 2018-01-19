@@ -73,7 +73,6 @@ class HomeComponent extends React.Component {
                         }).then(res => {
                             console.log(res);
                         }).catch(err => {
-
                         })
                     }}
                 >
