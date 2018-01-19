@@ -4,7 +4,8 @@ import {
     TouchableHighlight,
     StyleSheet,
     Text,
-    NativeModules
+    NativeModules,
+    WebView
 } from 'react-native';
 import { connect } from 'react-redux';
 import { action } from '../../redux/action/index.js';
@@ -33,6 +34,10 @@ class HomeComponent extends React.Component {
 
     componentDidMount() {
         this.props.getDangerHistoryInfo();
+    }
+
+    handleMessage(e) {
+        console.log(JSON.parse(e.nativeEvent.data));
     }
 
     render() {
@@ -64,16 +69,25 @@ class HomeComponent extends React.Component {
                         //     console.log(err);
                         // });
                         NativeModules.MapSc.OpActivity("com.maxdog.MapActivity", {
-                            test: "123" 
+                            test: "123"
                         }).then(res => {
                             console.log(res);
-                        }).catch(err => { 
+                        }).catch(err => {
 
                         })
                     }}
                 >
                     <Text>{htmlStr}</Text>
                 </TouchableHighlight>
+                <WebView
+                    style={{
+                        height: 800,
+                    }}
+                    onMessage={this.handleMessage}
+                    source={require('../repair/index.html')}
+                >
+
+                </WebView>
             </View>
         )
     }
